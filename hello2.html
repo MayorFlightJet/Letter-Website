@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear ( your name ).</strong>
+                        <p>
+                            I know there are days when the journey feels long, but I want to remind you of something important: 
+                            you are capable of achieving incredible things. Every challenge you face is an opportunity to grow stronger,
+                             wiser, and more resilient. 
+                            Even on the days when progress feels slow, trust that each step you take is one closer to your goals.
+                            Remember, success isn’t defined by perfection, but by persistence. It’s about showing up, even when you don’t feel like it,
+                             and doing the best you can in the moment. The effort you put in, no matter how small it seems, 
+                            With belief in you,
+                            (your name )
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+<link rel="stylesheet" type="text/css" href="hello2.css">
+</html>
